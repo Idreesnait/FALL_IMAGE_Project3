@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"> </script>
+     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#ffffff"></a-sphere>
+      <a-sphere position="0 3.1 -5" radius="0.9" color="#ffffff"></a-sphere>
+      <a-sphere position="0 4.5 -5" radius="0.65" color="#ffffff"></a-sphere>
+      <a-cone rotation="100 0 0" position="0 4.5 -4.35" color="tomato" radius-bottom=".123" radius-top="0.01"></a-cone>
+
+
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
+      <!-- the enviroment entity includes a sky. Choose from the presets"none, default, contact, egypt, checkerboard, forest, goaland, yavapai, goldmine, threetowers, poison, arches, tron, japan, dream, volcano, starry, osiris, moon" -->
+      <a-entity environment="preset: japan; dressingAmount: 100"></a-entity>
+    </a-scene>
+  </body>
+</html>
